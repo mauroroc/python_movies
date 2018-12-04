@@ -5,8 +5,8 @@ import tmdbsimple as tmdb
 
 
 # Chave para acesso a API do TMDBSimple
-tmdb.API_KEY = 'ae221525f59fff4f079bf164de77fa34'
-
+# Antiga - tmdb.API_KEY = 'ae221525f59fff4f079bf164de77fa34'
+tmdb.API_KEY = 'f3da2aee3c21c6eb05f8e3fbaae64f01'
 
 def getInfo(id_imdb):
     # Cria um objeto do tipo Movies da classe TMDB recebendo o id do filme no
@@ -23,9 +23,9 @@ def getTrailer(id_imdb):
     movie = tmdb.Movies(id_imdb).info(**kwargs)
     return movie.get('trailers')['youtube'][0]['source']
 
-# Carrega o codigo no IMDB de 6 filmes que vao estreiar em julho
-comingSoon = ['tt3766354', 'tt4761916', 'tt7242142',
-              'tt6510332', 'tt5268348', 'tt3457508']
+# Carrega o codigo no IMDB de 6 filmes que vao estreiar em decembro
+comingSoon = ['tt5463162', 'tt7959026', 'tt1477834',
+              'tt1255919', 'tt2126357', 'tt4701182']
 
 # Cria um dictionary com objetos do tipo media.Movie recebendo como parametro
 # o codigo deles no IMDB

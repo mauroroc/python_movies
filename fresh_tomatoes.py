@@ -11,7 +11,7 @@ main_page_head = '''
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Coming Soon in July - Mauro</title>
+    <title>Coming Soon in December - Mauro - Udacity</title>
 
     <!-- Bootstrap 3 -->
     <link rel="stylesheet"
